@@ -1,3 +1,4 @@
+alert("hi");
 var DB; // Base de dados
 
 function show(){
