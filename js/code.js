@@ -10,7 +10,7 @@ function show(){
 function initDB(){
 	// Web storage initial
 	if(!window.openDatabase){ // Verificação se é nativo com HTML5 WebStorage
-		document.getElementById("menu").innerHTML+= = "Atentção";
+		document.getElementById("status").innerHTML+= "Atentção";
 		document.getElementById("status").style.display = "block";
 		document.getElementById("intro").style.display = "none";
 		return;
@@ -19,7 +19,7 @@ function initDB(){
 		var name = "Quotations";
 		var version = "1.0";
 		var displayName = "Quotations";
-		var maxSize = 3*1024*1024 // 3MB
+		var maxSize = 3*1024*1024; // 3MB
 		db = window.openDatabase(name,version,displayName,maxSize);
 	}
 }
